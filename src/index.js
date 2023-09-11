@@ -4,10 +4,11 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const htmlElement = document.getElementById('root'); // HTMLElement ---> Object
+const root = ReactDOM.createRoot(htmlElement); // React.Root ---> Object
 root.render(
   <React.StrictMode>
-    <App />
+     <App title="PT-40" date="11/09"/> {/* App({title: "PT-40", date: "11/09"}) */}
   </React.StrictMode>
 );
 

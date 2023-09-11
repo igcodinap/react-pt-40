@@ -2,7 +2,15 @@ import logo from './logo.svg';
 import './App.css';
 import { Button } from './components/Button';
 
-function App() {
+// palabra clave function
+// nombre de la función/componente
+// paréntesis ---> spoiler:props
+// llaves
+// return (html/jsx) 
+// Ctrl +d
+
+function App(props) {
+  console.log(props);
   return (
     <div className="App">
       <header className="App-header">
@@ -16,10 +24,11 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          {props.title} {props.date}
         </a>
-        <Button />
-        <Button />
+        <Button text="Click me!"/>
+        <Button text="Presioname!!"/>
+        <Button text="Clickeame!"/>
       </header>
     </div>
   );
