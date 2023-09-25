@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
-import { Button } from './components/Button';
+import Button  from './components/Button'; // ES6
+import {Navbar} from './components/Navbar';
 
 // palabra clave function
 // nombre de la función/componente
@@ -10,9 +11,11 @@ import { Button } from './components/Button';
 // Ctrl +d
 
 function App(props) {
-  console.log(props);
+  // console.log(props);
   return (
+    <>
     <div className="App">
+      <Navbar />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -26,11 +29,12 @@ function App(props) {
         >
           {props.title} {props.date}
         </a>
-        <Button text="Click me!"/>
-        <Button text="Presioname!!"/>
-        <Button text="Clickeame!"/>
+        <Button text="Click me!" color="red"/> Button("Click me!")
+        <Button text="Presioname!!" color="blue"/> Button("Presioname!!")
+        <Button text="Clickeame!" color="green"/> Button("Clickeame!")
       </header>
     </div>
+    </>
   );
 }
 

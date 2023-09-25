@@ -1,5 +1,12 @@
-export function Button(props) {
+export default function Button({ text, color }) {
+    console.log(color)
     return (
-        <button>{props.text}</button>
+        <button>{text}</button>
     );
 }
+
+
+
+// { text: "Click me", color: "red"}
+
+// destructuring ---> object
